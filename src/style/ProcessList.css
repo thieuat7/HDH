@@ -1,0 +1,56 @@
+/* Container của danh sách tiến trình */
+.process-list {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách tiến trình */
+.process-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Mỗi mục trong danh sách */
+.process-list li {
+  background-color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.process-list li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Nút Xóa */
+.process-list button {
+  background-color: #ff4d4d;  /* Màu đỏ */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.process-list button:hover {
+  background-color: #ff1a1a;  /* Đỏ đậm khi hover */
+  transform: scale(1.1);  /* Phóng to một chút khi hover */
+}
+
+.process-list button:active {
+  transform: scale(1);  /* Khôi phục khi nhấn */
+}
+
+.process-list button:focus {
+  outline: none;  /* Loại bỏ viền khi nút được chọn */
+}
