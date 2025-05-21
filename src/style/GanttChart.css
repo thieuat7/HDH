@@ -1,0 +1,40 @@
+/* src/styles/GanttChart.css */
+
+.gantt-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.gantt-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.gantt-bar-wrapper {
+  display: flex;
+  height: 60px;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gantt-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4F46E5;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.gantt-timeline {
+  display: flex;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #4b5563;
+}
+

@@ -1,0 +1,62 @@
+.metrics-container {
+  padding: 20px 28px;
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(30, 60, 120, 0.15);
+  max-width: 320px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.metrics-container:hover {
+  box-shadow: 0 10px 25px rgba(30, 60, 120, 0.3);
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #2a3f73;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.metrics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.metrics-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #ffffffcc;
+  box-shadow: 0 2px 6px rgba(100, 110, 140, 0.1);
+  transition: background-color 0.25s ease;
+  cursor: default;
+}
+
+.metrics-list li:hover {
+  background-color: #d0d9ff;
+}
+
+.label {
+  font-weight: 600;
+  color: #3b4a7d;
+  font-size: 15px;
+}
+
+.value {
+  font-weight: 700;
+  color: #1a237e;
+  font-size: 16px;
+  min-width: 60px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
