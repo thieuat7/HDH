@@ -8,14 +8,18 @@ import { fcfs } from './algorithms/fcfs';
 import { sjf } from './algorithms/sjf';
 import { srtf } from './algorithms/srtf';
 import { rr } from './algorithms/rr';
+
 import GanttChart from './components/Gantt';
 import Metrics from './components/Metrics';
+
 
 function App() {
   const [processes, setProcesses] = useState([]);
   const [result, setResult] = useState([]);
+
   const [gantt, setGantt] = useState ([])
   const [metrics, setMetrics] = useState ([])
+
   const [algorithm, setAlgorithm] = useState('fcfs');
   const [quantum, setQuantum] = useState(0);
 
@@ -56,11 +60,9 @@ function App() {
         alert("Thuật toán không hợp lệ.");
         return;
     }
-
     setResult(result);
     setGantt(ganttChart);
     setMetrics (metrics)
-
   };
 
   return (
@@ -83,15 +85,14 @@ function App() {
 
       {/* Truyền hàm onDeleteProcess vào ProcessList */}
       <ProcessList processes={processes} onDeleteProcess={onDeleteProcess} />
-      <Results result={result} />
-      
+      <Results result={result} />   
       <GanttChart ganttChart={gantt} />
-      
       <Metrics
                avgTurnaroundTime={metrics.avgTurnaroundTime}
               avgResponseTime={metrics.avgResponseTime}
               avgWaitingTime={metrics.avgWaitingTime}
       />
+
     </div>
   );
 }

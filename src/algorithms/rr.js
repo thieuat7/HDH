@@ -1,4 +1,3 @@
-
 /**
  * Round Robin (RR) CPU scheduling algorithm implementation
  * @param {Array} processes - Array of process objects with pid, arrival, and burst properties

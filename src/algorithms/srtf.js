@@ -1,3 +1,4 @@
+
 /**
  * Shortest Remaining Time First (SRTF) CPU scheduling algorithm implementation
  * @param {Array} processes - Array of process objects with pid, arrival, and burst properties
@@ -135,7 +136,7 @@ export function srtf(processes) {
         waitingTime: currentProcess.waitingTime,
         responseTime: currentProcess.responseTime
       });
-      
+  
       completed++;
     }
   }
